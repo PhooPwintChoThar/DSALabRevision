@@ -97,32 +97,5 @@ public class MyArray_671755  extends MyArrayBasic_671755{
         return  -(1+start);
         
     }
-
-    //  public int binarySearch(int target){
-    //     int start=0;
-    //     int end=size-1;
-       
-    //     while( start<=end){
-    //         int middle=(start+end)/2;
-
-    //         if (data[middle]==target) return middle;
-
-    //         if (data[middle]>target){
-    //             end=middle-1;
-    //         }else{
-    //             start=middle+1;
-
-    //         }
-
-            
-
-    //     }
-
-    //     return -1;
-
-    // }
-
-    
-
     
 }
