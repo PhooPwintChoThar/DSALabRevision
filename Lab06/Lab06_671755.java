@@ -3,11 +3,11 @@ package Lab06;
 import java.util.Iterator;
 
 import Lab06.pack.*;
-import Lab05.pack.MyRPN;
+import Lab05.pack.MyRPN_671755;
 
 public class Lab06_671755 {
     static void task_2() {
-        MyQueueL_XXYYYY<String> queue = new MyQueueL_XXYYYY<>();
+        MyQueueL_671755<String> queue = new MyQueueL_671755<>();
         queue.enqueue("Apple");
         queue.enqueue("Banana");
         queue.enqueue("Cantaloupe");
@@ -27,15 +27,15 @@ public class Lab06_671755 {
         }
         System.out.println();
     }
-static void task_3() { // compute InFix
-    String inFix = "( 4 + 2 ) / 3 * ( 8 - 5 )";
-    String postFix = MyShuntingYard.infixToPostfix(inFix);
-    System.out.println("postFix= " + postFix);
-    double ans = MyRPN.computeRPN(postFix);
-    System.out.println(ans); 
-}
+    static void task_3() { // compute InFix
+        String inFix = "( 4 + 2 ) / 3 * ( 8 - 5 )";
+        String postFix = MyShauntingYard_671755.infixToPostfix(inFix);
+        System.out.println("postFix= " + postFix);
+        double ans = MyRPN_671755.computeRPN(postFix);
+        System.out.println(ans); 
+    }
     public static void main(String[] args) {
-        // task_2();
+        task_2();
         task_3();
     }
 }
