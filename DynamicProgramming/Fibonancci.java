@@ -4,7 +4,7 @@ package DynamicProgramming;
 import java.util.Arrays;
 
 public class Fibonancci {
-    public  void main(String[] args){
+    public static  void main(String[] args){
         int num=7;
         int[] results=new int[num+1];
         Arrays.fill(results, -1);
@@ -18,7 +18,7 @@ public class Fibonancci {
 
     }
 
-    private int fibonancci_memoization(int n, int[] a){
+    private static  int fibonancci_memoization(int n, int[] a){
         if (a[n]!= -1){
             return a[n];
         }
@@ -32,7 +32,7 @@ public class Fibonancci {
         return a[n];
 }
 
-    private int fibonannci_tabulation(int n){
+    private static  int fibonannci_tabulation(int n){
         if(n==1){
             return 1;
         }

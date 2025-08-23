@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class Climbing_Stairs {
 
-    public void main(String[] args){
+    public static void main(String[] args){
 
         int stairs=3;
         int[] path_counts= new int[stairs+1];
@@ -21,7 +21,7 @@ public class Climbing_Stairs {
         System.out.println(possible_steps);
     }
 
-    private int steps_memoization(int stairs, int[] path_counts){
+    private static int steps_memoization(int stairs, int[] path_counts){
         if(stairs<=1){
             return 1;
         }
@@ -34,7 +34,7 @@ public class Climbing_Stairs {
         return path_counts[stairs];
     }
 
-    private int steps_tabulation(int stairs){
+    private static int steps_tabulation(int stairs){
         if(stairs==0){
             return 0;
         }
