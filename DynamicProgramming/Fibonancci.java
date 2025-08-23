@@ -1,6 +1,9 @@
+package DynamicProgramming;
+//Given an integer n, print the nth Fibonacci number. The Fibonacci sequence is defined as:
+//F(0) = 0, F(1) = 1, F(n) = F(n-1) + F(n-2) for n ≥ 2.
 import java.util.Arrays;
 
-public class TestMemoization {
+public class Fibonancci {
     public  void main(String[] args){
         int num=7;
         int[] results=new int[num+1];
