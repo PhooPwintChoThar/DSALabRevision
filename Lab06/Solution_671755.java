@@ -29,13 +29,13 @@ public class Solution_671755 {
         int count=0;
         Queue<int[]> areas=new LinkedList<>();
         int[][] directions={{-1,0}, {1,0}, {0,-1}, {0,1}};
-        areas.offer(new int[]{r,c});
+        areas.add(new int[]{r,c});
         visited[r][c]=true;
         int[] current;
         int c_r;
         int c_c;
         while (!areas.isEmpty()) {
-            current=areas.poll();
+            current=areas.remove();
             c_r = current[0];
             c_c =current[1];
             count+=1;

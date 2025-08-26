@@ -1,10 +1,12 @@
 package Lab06;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
-public class Task1 <T>{
-    private List<T> items=new ArrayList<>();
+public class Task1 <T> implements Iterable<T>{
+    private List<T> items=new LinkedList<>();
     public void enqueue(T d){
         items.add(d);
     }
@@ -34,6 +36,10 @@ public class Task1 <T>{
         sb.append("bottom");
         return sb.toString();
         
+    }
+
+    public Iterator <T> Iterator(){
+        return items.iterator();
     }
 }
 
