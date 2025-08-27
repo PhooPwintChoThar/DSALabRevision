@@ -45,7 +45,7 @@ public class Solution_671755 {
                 n_c=c_c+d[1];
                 if(n_r>=0 && n_r<grid.length && n_c>=0 && n_c<grid[0].length && !visited[n_r][n_c] && grid[n_r][n_c]==1){
                  
-                    areas.offer(new int[]{n_r, n_c});
+                    areas.add(new int[]{n_r, n_c});
                     visited[n_r][n_c]=true;
                 }
             }
