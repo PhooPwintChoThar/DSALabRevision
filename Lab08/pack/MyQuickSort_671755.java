@@ -15,34 +15,19 @@ public class MyQuickSort_671755 {
         int pivot_v = arr[high];
         int i = low, tmp;
         
-        int j=high-1;
-        while (true) {
-      
-        while (i <= j && arr[i] < pivot_v) {
-            i++;
+        for(j=i; j<high; j++){
+            if(arr[j]<pivot_v){
+                tmp=arr[j];
+                arr[j]=arr[i];
+                arr[i]=arr[j];
+                i++;
+            }
         }
-
-
-        while (j >= i && arr[j] > pivot_v) {
-            j--;
-        }
-
-
-        if (i >= j) break;
-
-        tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
-
-       
-        i++;
-        j--;
-    }
-
-    tmp = arr[i];
-    arr[i] = arr[high];
-    arr[high] = tmp;
+        tmp=arr[i];
+        arr[i]=pivot_v;
+        pivot_v=tmp;
 
         return i;
-    }
+        
+}
 }
